@@ -6,6 +6,10 @@ install:
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps   --missing | cpanm -n
 
+env:
+  - ALIEN_FORCE=1
+  - ALIEN_FORCE=0
+
 perl:
   - "5.8"
   - "5.10"
