@@ -11,7 +11,7 @@ my $post_diag;
 
 $modules{$_} = $_ for qw(
   Alien::Base
-  Alien::Base::ModuleBUild
+  Alien::Base::ModuleBuild
   Capture::Tiny
   File::chdir
   Module::Build
