@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.03      2015-12-23 08:24:41 -0700
   - First cpan release
   - Included documentation for use
 
