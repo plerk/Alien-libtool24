@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - First cpan release
+  - Included documentation for use
 
 0.02      2015-12-22 21:33:17 -0700
   - Tweaks for windows
