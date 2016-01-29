@@ -8,33 +8,6 @@ use Capture::Tiny qw( capture );
 use File::Spec;
 use File::Copy qw( copy );
 
-sub new
-{
-  my($class, %args) = @_;
-  
-  #$args{alien_build_commands}   = [ '%c --prefix=%s', 'make' ];
-  #$args{alien_install_commands} = [ 'make install' ];
-  #
-  #if($^O eq 'MSWin32')
-  #{
-  #  push @{ $args{alien_install_commands} }, [ '%x', '-I../../inc', '-MMy::ModuleBuild', -e => '_install_hunspell_win32(@ARGV)', '%s' ];
-  #}
-
-  $args{alien_bin_requires} = {
-    'Alien::m4' => '0.04',
-  };  
-  $args{alien_repository} = {
-    protocol => 'http',
-    host     => 'ftp.gnu.org',
-    location => "/gnu/libtool/",
-    pattern  => qr{^libtool-2\.4\..*\.tar\.gz$},
-  };
-
-  my $self = $class->SUPER::new(%args);
-  
-  $self;
-}
-
 sub main::_install_hunspell_win32
 {
   my($path) = @_;
