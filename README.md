@@ -1,6 +1,6 @@
 # Alien::libtool24 [![Build Status](https://secure.travis-ci.org/plicease/Alien-libtool24.png)](http://travis-ci.org/plicease/Alien-libtool24)
 
-Built or find libtool 2.4.x
+(Deprecated) Built or find libtool 2.4.x
 
 # SYNOPSIS
 
@@ -29,6 +29,9 @@ From regular Perl:
     system 'libtool ...';
 
 # DESCRIPTION
+
+**This module is deprecated**.  Use [Alien::libtool](https://metacpan.org/pod/Alien::libtool) instead, it uses newer
+better Alien tech.
 
 This module will download and install libtool 2.4.x if it is not already
 available on your system.  As with other [Alien::Base](https://metacpan.org/pod/Alien::Base) based distributions
@@ -61,8 +64,9 @@ hackishly on Windows.
 
 # SEE ALSO
 
-- Alien
-- Alien::Base
+- [Alien](https://metacpan.org/pod/Alien)
+- [Alien::Base](https://metacpan.org/pod/Alien::Base)
+- [Alien::libtool](https://metacpan.org/pod/Alien::libtool)
 
 # AUTHOR
 
